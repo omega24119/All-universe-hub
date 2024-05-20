@@ -1,7 +1,7 @@
 local placeId = game.PlaceId
 
 local scriptUrls = {
-    [14265515277] = "https://raw.githubusercontent.com/omega24119/runninng-simulator/main/runninng%20simulator",
+    [14265515277] = "https://raw.githubusercontent.com/omega24119/running-simulator-update/main/upd%20running%20hub%20added%20rebirth",
     
 
 }
