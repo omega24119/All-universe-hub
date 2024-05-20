@@ -1,0 +1,22 @@
+local placeId = game.PlaceId
+
+local scriptUrls = {
+    [14265515277] = "https://raw.githubusercontent.com/omega24119/runninng-simulator/main/runniinng%20simulator",
+    
+
+}
+
+local function loadScript(url)
+    local success, result = pcall(function()
+        loadstring(game:HttpGet(url, true))()
+    end)
+    if not success then
+        print("Error loading script:", result)
+    end
+end
+
+if scriptUrls[placeId] then
+    loadScript(scriptUrls[placeId])
+else
+    print("Unknown place ID:", placeId)
+end
