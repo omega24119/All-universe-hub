@@ -1,3 +1,35 @@
+local blacklistedUsers = {
+    "Nubkh4l3b",
+    }
+
+-- Function to check if a user is blacklisted
+local function isBlacklisted(username)
+    for _, blacklistedUsername in ipairs(blacklistedUsers) do
+        if username == blacklistedUsername then
+            return true
+        end
+    end
+    return false
+end
+
+-- Function to kick blacklisted users
+local function kickIfBlacklisted(player)
+    if isBlacklisted(player.Name) then
+        print(player.Name .. " is blacklisted. Access denied.")
+        player:Kick("You are not authorized to use this script.")
+    end
+end
+
+-- Check existing players
+for _, player in pairs(game.Players:GetPlayers()) do
+    kickIfBlacklisted(player)
+end
+
+-- Kick blacklisted users upon joining
+game.Players.PlayerAdded:Connect(function(player)
+    kickIfBlacklisted(player)
+end)
+
 local placeId = game.PlaceId
 
 local scriptUrls = {
