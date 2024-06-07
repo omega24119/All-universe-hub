@@ -34,8 +34,8 @@ local placeId = game.PlaceId
 
 local scriptUrls = {
     [14265515277] = "https://raw.githubusercontent.com/omega24119/running-simulator-update/main/upd%20running%20hub%20added%20rebirth",
-    [16480898254] = "https://raw.githubusercontent.com/omega24119/key-eat/main/key%20eat"
-
+    [16480898254] = "https://raw.githubusercontent.com/omega24119/key-eat/main/key%20eat",
+[16981421605] = "https://raw.githubusercontent.com/omega24119/Reborn-as-a-swordsman-key-obfuscated-main/main/Reborn%20as%20a%20swordsman%20obfuscate%20main%20key"
 }
 
 local function loadScript(url)
