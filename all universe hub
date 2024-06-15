@@ -21,29 +21,28 @@ local function kickIfBlacklisted(player)
 end
 
 -- Check existing players
-for _, player in pairs(game.Players:GetPlayers()) do
+for _, er in pairs(game.Players:GetPlayers()) do
     kickIfBlacklisted(player)
 end
 
--- Kick blacklisted users upon joining
-game.Players.PlayerAdded:Connect(function(player)
+-- Kick blacklisted users upon ct(function(player)
     kickIfBlacklisted(player)
 end)
 
 local placeId = game.PlaceId
 
 local scriptUrls = {
-    [14265515277] = "https://raw.githubusercontent.com/omega24119/running-simulator-update/main/upd%20running%20hub%20added%20rebirth",
-    [16480898254] = "https://raw.githubusercontent.com/omega24119/key-eat/main/key%20eat",
-[16981421605] = "https://raw.githubusercontent.com/omega24119/Reborn-as-a-swordsman-key-obfuscated-main/main/Reborn%20as%20a%20swordsman%20obfuscate%20main%20key"
+    [142655177] = "https://raw.githubusercontent.com/omega24119/running-simulator-update/main/upd%20running%20hub%20added%20rebirth",
+    [164 = key-eat/main/key%20eat",
+[169805] = "https://raw.githubusercontent.com/omega24119/Reborn-as-a-swordsman-key-obfuscated-main/main/Reborn%20as%20a%20swordsman%20obfuscate%20main%20key"
 }
 
 local function loadScript(url)
-    local success, result = pcall(function()
+    locaess, result = pcall(function()
         loadstring(game:HttpGet(url, true))()
     end)
     if not success then
-        print("Error loading script:", result)
+("Error loading script:", result)
     end
 end
 
